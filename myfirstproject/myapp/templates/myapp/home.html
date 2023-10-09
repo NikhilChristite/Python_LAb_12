@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Best Fruits to server You</title>
+	<style>
+        * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+header {
+	background-color: #f2f2f2;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #333;
+	text-decoration: none;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.hero {
+	background-image: url('https://images.unsplash.com/photo-1528825871112-5a810fda9664');
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+}
+
+.hero h2 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.cta {
+	background-color: #ff6600;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.cta:hover {
+	background-color: #cc5500;
+}
+
+.form {
+	margin-top: 50px;
+}
+
+.form h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input,
+form textarea,
+form select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+}
+
+form button {
+	background-color: #ff6600;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+form button:hover {
+	background-color: #cc5500;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Best Fruits here, To server You</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h2>Welcome to Fruits Buying App</h2>
+			<p>Buy fresh fruits online with our easy-to-use app. Choose from a wide variety of fruits and get them delivered to your doorstep.</p>
+			<a href="#" class="cta">Buy Now</a>
+		</section>
+		<section class="form">
+			<h2>Order Form</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" required>
+				<label for="address">Address:</label>
+				<textarea id="address" name="address" required></textarea>
+				<label for="fruit">Select Fruit:</label>
+				<select id="fruit" name="fruit" required>
+					<option value="">--Select Fruit--</option>
+					<option value="apple">Apple</option>
+					<option value="banana">Banana</option>
+					<option value="orange">Orange</option>
+				</select>
+				<label for="quantity">Quantity:</label>
+				<input type="number" id="quantity" name="quantity" min="1" max="10" required>
+				<button type="submit">Order Now</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Fruits Buying App. All rights reserved.</p>
+	</footer>
+</body>
+</html>
